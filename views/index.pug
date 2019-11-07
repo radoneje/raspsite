@@ -5,7 +5,7 @@ block content
   div Нажмите на ссылки, что бы их скопировать
   div(id="app" style="margin-top:50px")
     div(v-for="item in pgm" style="margin-bottom:20px; cursor:pointer; ")
-      span(style="font-weight: bold;") {{moment(item.dateStart).format("DD.MM HH:mm")}} -{{moment(item.dateEnd).format("HH:mm")}}  {{item.title}}
+      span(style="font-weight: bold;") {{moment(item.dateStart).format("DD.MM HH:mm")}} -{{moment(item.dateEnd).format("HH:mm")}} {{item.room}} {{item.title}}
       div(style="margin-left:30px" v-if="item.yt && item.yt.length>0")
         span(@click="copyText(item.yt)") ссылка YT русская &nbsp;
         span {{item.yt}}
