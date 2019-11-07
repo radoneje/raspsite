@@ -10,7 +10,7 @@ block content
         span(@click="copyText(item.yt)") ссылка YT русская &nbsp;
         span {{item.yt}}
 
-      div(style="margin-left:30px" v-if="item.yt && item.yt.length>0")
+      div(style="margin-left:30px" v-if="item.yt && item.ytEng.length>0")
         span(@click="copyText(item.ytEng)") ссылка YT английская &nbsp;
         span {{item.ytEng}}
   script(src="/javascripts/axios.js")
